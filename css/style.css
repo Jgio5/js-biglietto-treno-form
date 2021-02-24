@@ -14,6 +14,14 @@ body {
   margin: 0 auto;
 }
 
+/* Utility visibility*/
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
 /* Inizio Parte Superiore */
 .title {
   text-align: center;
@@ -34,18 +42,18 @@ body {
   color: #BA1550;
 }
 
-.informazioni_input {
+#informazioni_input {
   height: 60%;
 }
 
-.informazioni_input [class^= "col_"] {
+#informazioni_input [class^= "col_"] {
   float: left;
   width: 33%;
   text-align: center;
   margin: 30px 0;
 }
 
-.informazioni_input h2 {
+#informazioni_input h2 {
   margin-bottom: 20px;
 }
 
@@ -65,7 +73,7 @@ body {
   margin-top: 30px;
 }
 
-.informazioni_output {
+#informazioni_output {
   height: 300px;
   padding: 20px;
   background-color: white;
