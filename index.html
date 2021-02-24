@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calcolare biglietto</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Inizio Parte superiore -->
+      <div class ="title">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      </div>
+      <div class ="dati_biglietto">
+        <div class ="informazioni_input">
+          <div class = "col_left">
+            <h2>Nome Cognome</h2>
+            <input type="text" name="nome_cognome" class ="btn_input" placeholder ="Inserisci nome e cognome">
+          </div>
+          <div class = "col_center">
+            <h2>km da percorrere</h2>
+            <input type="number" id="tentacles" name="tentacles" class ="btn_input" min="1" max="1000" placeholder="Inserisci il N. di km">
+          </div>
+          <div class = "col_right">
+            <h2>Fascia d'età</h2>
+            <select name ="scelta" class="btn_input">
+              <option value = "silver">Silver</option>
+              <option value = "Young">Young</option>
+              <option value = "Standard">Standard</option>
+            </select>
+          </div>
+        </div>
+        <div class ="invio_annulla">
+          <input type ="submit" class ="btn_click" value = "Genera">
+          <input type ="submit" class ="btn_click" value = "Annulla">
+        </div>
+      </div>
+      <!-- Fine Parte superiore -->
+      <!-- Inizio Parte inferiore -->
+      <div class ="stampa_dati_biglietto">
+        <div class ="title">
+          <h1>IL TUO BIGLIETTO</h1>
+        </div>
+        <div class ="informazioni_output">
+          <h2>DETTAGLI PASSEGGERO</h2>
+        <div class ="biglietto_output">
+          <div class ="col_left">
+            <h3>NOME PASSEGGERO</h3>
+            <h3 id ="nome_passeggero">ehi ehi</h3>
+          </div>
+          <div class ="col_right">
+            <table>
+              <thead>
+                <tr>
+                  <td>Offerta</td>
+                  <td>Carrozza</td>
+                  <td>Codice CP</td>
+                  <td>Costo Biglietto</td>
+                </tr>
+              <tbody>
+                <tr>
+                  <td id="tipologia">Sconto Young</td>
+                  <td id ="numb_train">7</td>
+                  <td id ="code_ip">97928</td>
+                  <td id ="price_train">3.36€</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Fine Parte inferiore -->
+    </div>
+  </body>
+</html>
